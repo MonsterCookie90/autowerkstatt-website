@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Autowerkstatt – Service, Reparatur und persönliche Beratung.">
+  <title>Autowerkstatt | Service & Reparatur</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#start">
+      <span class="logo-mark">⚙</span>
+      <span>[WERKSTATTNAME]</span>
+    </a>
+    <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false">☰</button>
+    <nav>
+      <a href="#leistungen">Leistungen</a>
+      <a href="#aktionen">Aktionen</a>
+      <a href="#ueber-uns">Über uns</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#kontakt">Kontakt</a>
+      <a class="nav-cta" href="#termin">Termin anfragen</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="start">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">DEINE AUTOWERKSTATT VOR ORT</p>
+        <h1>Damit dein Auto<br><span>zuverlässig läuft.</span></h1>
+        <p>Persönlicher Service, transparente Beratung und fachgerechte Arbeit rund um dein Fahrzeug.</p>
+        <div class="hero-buttons">
+          <a class="button primary" href="#termin">Termin anfragen</a>
+          <a class="button secondary" href="#leistungen">Leistungen ansehen</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-info">
+      <div><strong>📍 Standort</strong><span>[Adresse / Ort]</span></div>
+      <div><strong>☎ Kontakt</strong><span>[Telefonnummer]</span></div>
+      <div><strong>🕒 Öffnungszeiten</strong><span>[Mo–Fr: xx:xx–xx:xx]</span></div>
+    </section>
+
+    <section class="section" id="leistungen">
+      <div class="section-heading">
+        <p class="eyebrow">WAS WIR FÜR DICH TUN</p>
+        <h2>Unsere Leistungen</h2>
+        <p>Hier werden später die tatsächlichen Leistungen der Werkstatt eingetragen.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><div class="icon">🔧</div><h3>Reparatur & Wartung</h3><p>[Beschreibung der angebotenen Reparatur- und Wartungsarbeiten]</p></article>
+        <article class="card"><div class="icon">🛞</div><h3>Reifen & Räder</h3><p>[Nur verwenden, wenn diese Leistung tatsächlich angeboten wird]</p></article>
+        <article class="card"><div class="icon">🔍</div><h3>Diagnose</h3><p>[Informationen zu Diagnose und Fehlersuche]</p></article>
+        <article class="card"><div class="icon">🚗</div><h3>Weitere Leistungen</h3><p>[Weitere Leistungen der Werkstatt]</p></article>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="aktionen">
+      <div class="section-heading">
+        <p class="eyebrow">AKTUELL</p>
+        <h2>Aktionen & Angebote</h2>
+        <p>Reguläre Leistungen bleiben ohne Preis. Hier können zeitlich begrenzte Aktionen mit Preis veröffentlicht werden.</p>
+      </div>
+      <div class="promo">
+        <div>
+          <span class="badge">AKTION</span>
+          <h3>[Aktionsname]</h3>
+          <p>[Kurze Beschreibung der Aktion und ggf. Bedingungen]</p>
+        </div>
+        <strong>[00,00 €]</strong>
+      </div>
+    </section>
+
+    <section class="section split" id="ueber-uns">
+      <div>
+        <p class="eyebrow">PERSÖNLICH & DIREKT</p>
+        <h2>Deine Werkstatt. Dein Ansprechpartner.</h2>
+        <p>[Hier kommt später ein kurzer Text über den Inhaber, die Werkstatt und die Arbeitsweise hinein.]</p>
+        <p>Bei einer Ein-Mann-Werkstatt kann besonders die persönliche Betreuung und der direkte Kontakt hervorgehoben werden.</p>
+      </div>
+      <div class="image-placeholder">FOTO DER WERKSTATT</div>
+    </section>
+
+    <section class="section" id="galerie">
+      <div class="section-heading">
+        <p class="eyebrow">EINBLICKE</p>
+        <h2>Unsere Werkstatt</h2>
+      </div>
+      <div class="gallery">
+        <div>Werkstattfoto 1</div><div>Werkstattfoto 2</div><div>Werkstattfoto 3</div>
+      </div>
+    </section>
+
+    <section class="section appointment" id="termin">
+      <div class="section-heading">
+        <p class="eyebrow">SCHNELL & UNKOMPLIZIERT</p>
+        <h2>Termin anfragen</h2>
+        <p>Dieses Formular ist zunächst nur die Oberfläche. Den späteren Versand können wir z. B. mit Formspree verbinden.</p>
+      </div>
+      <form id="appointment-form">
+        <div class="form-grid">
+          <label>Name<input type="text" name="name" required placeholder="Dein Name"></label>
+          <label>E-Mail<input type="email" name="email" required placeholder="name@beispiel.de"></label>
+          <label>Telefon<input type="tel" name="telefon" placeholder="Deine Telefonnummer"></label>
+          <label>Fahrzeug<input type="text" name="fahrzeug" placeholder="z. B. VW Golf 7"></label>
+          <label>Wunschtermin<input type="date" name="termin"></label>
+          <label>Anliegen<select name="anliegen"><option>Bitte auswählen</option><option>Reparatur</option><option>Wartung</option><option>Diagnose</option><option>Sonstiges</option></select></label>
+        </div>
+        <label>Nachricht<textarea name="nachricht" rows="5" placeholder="Beschreibe kurz dein Anliegen ..."></textarea></label>
+        <button class="button primary" type="submit">Terminanfrage senden</button>
+        <p class="form-note" id="form-note">Noch nicht mit einem Formular-Dienst verbunden.</p>
+      </form>
+    </section>
+
+    <section class="section contact" id="kontakt">
+      <div>
+        <p class="eyebrow">KONTAKT</p>
+        <h2>So erreichst du uns</h2>
+        <p><strong>[WERKSTATTNAME]</strong><br>[Straße + Hausnummer]<br>[PLZ Ort]</p>
+        <p>Telefon: [Telefonnummer]<br>E-Mail: [E-Mail-Adresse]</p>
+      </div>
+      <div class="map-placeholder">GOOGLE MAPS<br><small>wird später mit dem echten Standort eingebunden</small></div>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>[WERKSTATTNAME]</strong><br><span>Autowerkstatt & Service</span></div>
+    <div class="footer-links"><a href="#">Impressum</a><a href="#">Datenschutz</a></div>
+    <p>© <span id="year"></span> [WERKSTATTNAME]</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
